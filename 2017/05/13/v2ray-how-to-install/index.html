@@ -4,24 +4,30 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>V2Ray安装配置 | Hexo</title>
-  <meta name="description" content="null" />
+  <title>V2Ray安装配置 | Write it casually</title>
+  <meta name="description" content="Just for fun" />
   <meta name="keywords" content="" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="shortcut icon" href="/">
-  <link rel="alternate" href="/atom.xml" title="Hexo">
+  <link rel="alternate" href="/atom.xml" title="Write it casually">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言 V2Ray的安装非常简单，官方提供了一键安装脚本，有难度的是配置文件的调整及组件的添加  更新历史 2017年05月13日-撰写初稿  准备工作 注意 本文主要针对Linux为服务端及Windows为客户端的情况 时间校准V2Ray验证方式包含时间，如果时间不正确，将无法连接到服务器，尽量保证服务端和客户端的时间差不要超过一分钟；同时，V2Ray会自动转换时区，故不需要调整时区，只需要保证时">
+  <meta name="description" content="前言 V2Ray的安装非常简单，官方提供了一键安装脚本，有难度的是配置文件的调整及组件的添加  更新历史 2017年05月13日-撰写初稿  准备工作 注意 本文主要针对Linux为服务端及Windows为客户端的情况">
+<meta name="keywords" content="V2Ray">
 <meta property="og:type" content="article">
 <meta property="og:title" content="V2Ray安装配置">
 <meta property="og:url" content="http://yoursite.com/2017/05/13/v2ray-how-to-install/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前言 V2Ray的安装非常简单，官方提供了一键安装脚本，有难度的是配置文件的调整及组件的添加  更新历史 2017年05月13日-撰写初稿  准备工作 注意 本文主要针对Linux为服务端及Windows为客户端的情况 时间校准V2Ray验证方式包含时间，如果时间不正确，将无法连接到服务器，尽量保证服务端和客户端的时间差不要超过一分钟；同时，V2Ray会自动转换时区，故不需要调整时区，只需要保证时">
-<meta property="og:updated_time" content="2017-05-13T02:17:14.928Z">
+<meta property="og:site_name" content="Write it casually">
+<meta property="og:description" content="前言 V2Ray的安装非常简单，官方提供了一键安装脚本，有难度的是配置文件的调整及组件的添加  更新历史 2017年05月13日-撰写初稿  准备工作 注意 本文主要针对Linux为服务端及Windows为客户端的情况">
+<meta property="og:image" content="http://yoursite.com/images/v2ray.jpg">
+<meta property="og:image" content="http://yoursite.com/images/v2ray-taskbar.jpg">
+<meta property="og:image" content="http://yoursite.com/images/v2ray+taskbar.jpg">
+<meta property="og:image" content="http://yoursite.com/images/settings.jpg">
+<meta property="og:updated_time" content="2017-05-13T08:31:22.387Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="V2Ray安装配置">
-<meta name="twitter:description" content="前言 V2Ray的安装非常简单，官方提供了一键安装脚本，有难度的是配置文件的调整及组件的添加  更新历史 2017年05月13日-撰写初稿  准备工作 注意 本文主要针对Linux为服务端及Windows为客户端的情况 时间校准V2Ray验证方式包含时间，如果时间不正确，将无法连接到服务器，尽量保证服务端和客户端的时间差不要超过一分钟；同时，V2Ray会自动转换时区，故不需要调整时区，只需要保证时">
+<meta name="twitter:description" content="前言 V2Ray的安装非常简单，官方提供了一键安装脚本，有难度的是配置文件的调整及组件的添加  更新历史 2017年05月13日-撰写初稿  准备工作 注意 本文主要针对Linux为服务端及Windows为客户端的情况">
+<meta name="twitter:image" content="http://yoursite.com/images/v2ray.jpg">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -45,7 +51,7 @@
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
 			<a class="logo flat-box" href='/' >
-				Hexo
+				Write it casually
 			</a>
 			<div class='menu'>
 				<ul class='h-list'>
@@ -135,9 +141,14 @@
 	  May 13, 2017
 	</time>
 	
+    
+    <div class='cats'>
+        <a href="/categories/gfw/">gfw</a>
+    </div>
+
 	</section>
 	
-		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更新历史"><span class="toc-number">2.</span> <span class="toc-text">更新历史</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">3.</span> <span class="toc-text">准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#时间校准"><span class="toc-number">3.1.</span> <span class="toc-text">时间校准</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装curl"><span class="toc-number">3.2.</span> <span class="toc-text">安装curl</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装V2Ray"><span class="toc-number">4.</span> <span class="toc-text">安装V2Ray</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置文件说明"><span class="toc-number">4.1.</span> <span class="toc-text">配置文件说明</span></a></li></ol></li></ol></section>
+		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更新历史"><span class="toc-number">2.</span> <span class="toc-text">更新历史</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">3.</span> <span class="toc-text">准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#时间校准"><span class="toc-number">3.1.</span> <span class="toc-text">时间校准</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装curl"><span class="toc-number">3.2.</span> <span class="toc-text">安装curl</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装V2Ray"><span class="toc-number">4.</span> <span class="toc-text">安装V2Ray</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置文件说明"><span class="toc-number">4.1.</span> <span class="toc-text">配置文件说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开放防火墙端口"><span class="toc-number">4.2.</span> <span class="toc-text">开放防火墙端口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启动V2Ray"><span class="toc-number">4.3.</span> <span class="toc-text">启动V2Ray</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#客户端配置"><span class="toc-number">5.</span> <span class="toc-text">客户端配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载客户端"><span class="toc-number">5.1.</span> <span class="toc-text">下载客户端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改配置文件"><span class="toc-number">5.2.</span> <span class="toc-text">修改配置文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#浏览器配置"><span class="toc-number">6.</span> <span class="toc-text">浏览器配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐阅读"><span class="toc-number">7.</span> <span class="toc-text">推荐阅读</span></a></li></ol></section>
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
@@ -149,6 +160,7 @@
 <hr>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><hr>
 <p><strong>注意</strong> 本文主要针对<code>Linux</code>为服务端及<code>Windows</code>为客户端的情况</p>
+<a id="more"></a>
 <h3 id="时间校准"><a href="#时间校准" class="headerlink" title="时间校准"></a>时间校准</h3><p>V2Ray验证方式包含时间，如果时间不正确，将无法连接到服务器，尽量保证服务端和客户端的时间差不要超过一分钟；同时，V2Ray会自动转换时区，故不需要调整时区，只需要保证时间准确；服务器端校准时间方法如下，客户端请自行设置</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ date -R</div><div class="line">Fri, 12 May 2017 03:04:19 -0400 //查看系统时间，-0400代表的时区为西4区，如果转换为东8区时间为 2017-05-12 15:04:19</div><div class="line">date --set=<span class="string">"2017-05-12 03:04:19"</span> //设定时间</div><div class="line">Fri, 12 May 03:04:19 GMT 2017</div></pre></td></tr></table></figure>
 <h3 id="安装curl"><a href="#安装curl" class="headerlink" title="安装curl"></a>安装curl</h3><p><strong>[Redhat\CentOS]</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yum -y install curl</div></pre></td></tr></table></figure></p>
@@ -158,9 +170,9 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl https://install.direct/go.sh |bash //一键命令</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Archive:  /tmp/v2ray/v2ray.zip</div><div class="line">inflating: /tmp/v2ray/v2ray-v2.12.1-linux-64/systemd/v2ray.service</div><div class="line">inflating: /tmp/v2ray/v2ray-v2.12.1-linux-64/systemv/v2ray</div><div class="line">inflating: /tmp/v2ray/v2ray-v2.12.1-linux-64/v2ray</div><div class="line">inflating: /tmp/v2ray/v2ray-v2.12.1-linux-64/vpoint_socks_vmess.json</div><div class="line">inflating: /tmp/v2ray/v2ray-v2.12.1-linux-64/vpoint_vmess_freedom.json</div><div class="line">PORT:36832</div><div class="line">UUID:65d5fad7-af42-4ee9-b5df<span class="_">-a</span>2d0998e8<span class="built_in">cd</span>7</div><div class="line">V2Ray v2.12.1 is installed.</div></pre></td></tr></table></figure>
 <blockquote>
-<p><strong>出现以上类似内容即表示安装完成</strong><br><strong>主程序路径</strong> /usr/bin/v2ray/v2ray<br><strong>配置文件路径</strong> /etc/v2ray/config.json</p>
+<p><strong>出现以上类似内容即表示安装完成</strong><br><strong>主程序路径</strong> <code>/usr/bin/v2ray/v2ray</code><br><strong>配置文件路径</strong> <code>/etc/v2ray/config.json</code></p>
 </blockquote>
-<h3 id="配置文件说明"><a href="#配置文件说明" class="headerlink" title="配置文件说明"></a>配置文件说明</h3><p>打开’/etc/v2Ray/config.json’，截取配置文件中最重要的部分</p>
+<h3 id="配置文件说明"><a href="#配置文件说明" class="headerlink" title="配置文件说明"></a>配置文件说明</h3><p>打开<code>/etc/v2Ray/config.json</code>，截取配置文件中最重要的部分</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">"inbound": &#123;</div><div class="line">    "port": 20342,   //监听端口，如果启用了防火墙需要在防火墙中打开</div><div class="line">    "protocol": "vmess",    //协议</div><div class="line">    "settings": &#123;</div><div class="line">    "clients": [</div><div class="line">        &#123;</div><div class="line">        "id": "b831381d-6324-4d53-ad4f-8cda48b30811",  //用户ID，客户端和服务端必须保持一致</div><div class="line">        "level": 1,</div><div class="line">        "alterId": 64   //扩展ID，客户端和服务端必须保持一致</div><div class="line">        &#125;</div><div class="line">    ]</div><div class="line">    &#125;</div><div class="line">&#125;,</div></pre></td></tr></table></figure>
 <blockquote>
 <p><strong>其中：</strong></p>
@@ -171,9 +183,37 @@
 <li><strong>alterID:</strong> 扩展ID，客户端和服务端必须保持一致</li>
 </ul>
 </blockquote>
+<h3 id="开放防火墙端口"><a href="#开放防火墙端口" class="headerlink" title="开放防火墙端口"></a>开放防火墙端口</h3><p><strong>[Redhat\CentOS]</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#Redhat7+\CentOS7+，即启动服务使用systemctl的</span></div><div class="line"><span class="comment">#开放防火墙相应端口，按照配置文件中port为20342</span></div><div class="line">$ firewall-cmd --permanent --add-port=20342/tcp</div><div class="line">$ firewall-cmd --reload</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">#Redhat7-\CentOS7-，即启动服务使用service的</span></div><div class="line"><span class="comment">#开放防火墙端口</span></div><div class="line">$ vi /etc/sysconfig/iptables</div><div class="line">-A INPUT -p tcp -m tcp --dport 20342 -j ACCEPT</div><div class="line"><span class="comment">#保存退出</span></div><div class="line"><span class="comment">#重启防火墙</span></div><div class="line">$ service iptables restart</div></pre></td></tr></table></figure></p>
+<p><strong>[Debian\Ubuntu]</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#Debian系一般默认并不开启防火墙</span></div></pre></td></tr></table></figure></p>
+<h3 id="启动V2Ray"><a href="#启动V2Ray" class="headerlink" title="启动V2Ray"></a>启动V2Ray</h3><p><strong>[Redhat7+\CentOS7+\Debian8+\Ubuntu15.04+]</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#使用systemctl作为服务启动命令的</span></div><div class="line">$ systemctl start v2ray</div><div class="line"><span class="comment">#查看状态</span></div><div class="line">$ systemctl status v2ray</div><div class="line">● v2ray.service - V2Ray Service</div><div class="line">   Loaded: loaded (/usr/lib/systemd/system/v2ray.service; enabled; vendor preset: disabled)</div><div class="line">   Active: active (running)</div></pre></td></tr></table></figure></p>
+<p><strong>[Redhat7-\CentOS7-\Debian8-\Ubuntu15.04-]</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#使用service作为服务启动命令的</span></div><div class="line">$ service v2ray start</div></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h2><hr>
+<h3 id="下载客户端"><a href="#下载客户端" class="headerlink" title="下载客户端"></a>下载客户端</h3><blockquote>
+<p>客户端由两部分组成：V2Ray执行程序+第三方客户端<br><strong>注意</strong> 官方并未提供客户端，本教程使用了官方给出的第三方客户端<code>V2Ray Taskbar</code>进行说明<br>V2Ray下载地址：<a href="https://github.com/v2ray/v2ray-core/releases" target="_blank" rel="external">https://github.com/v2ray/v2ray-core</a>，请根据计算机位数下载压缩包<br><img src="/images/v2ray.jpg" alt="v2ray"><br>下载地址：<a href="https://github.com/kxjhlele/v2ray-taskbar/releases" target="_blank" rel="external">https://github.com/kxjhlele/v2ray-taskbar</a><br><img src="/images/v2ray-taskbar.jpg" alt="v2ray-taskbar"><br>两个压缩包下载解压后，将v2ray-taskbar.exe这个执行程序复制到v2ray解压文件夹，如下图<br><img src="/images/v2ray+taskbar.jpg" alt="v2ray+taskbar"></p>
+</blockquote>
+<h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><p>只需要修改<code>config.json</code>这个文件，打开<code>config.json</code>，其中需要修改的部分如下：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  "log": &#123;</div><div class="line">    "loglevel": "warning"</div><div class="line">  &#125;,</div><div class="line">  "inbound": &#123;</div><div class="line">    "port": 1080,    //本地监听端口，默认为1080，如果你已经开启了shadowsocks，请修改，避免冲突</div><div class="line">    "listen": "127.0.0.1",     //本地代理地址，默认为127.0.0.1</div><div class="line">    "protocol": "socks",   //代理协议，本地提供的代理协议</div><div class="line">    "settings": &#123;</div><div class="line">      "auth": "noauth",</div><div class="line">      "udp": false,</div><div class="line">      "ip": "127.0.0.1"</div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  "outbound": &#123;</div><div class="line">    "protocol": "vmess",   //v2ray协议，默认不需要修改</div><div class="line">    "settings": &#123;</div><div class="line">      "vnext": [</div><div class="line">        &#123;</div><div class="line">          "address": "server",   //远程服务器地址，可以是ip，也可以是域名</div><div class="line">          "port": 20342,    //远程服务器端口，必须和服务端相同，即上面的20342</div><div class="line">          "users": [</div><div class="line">            &#123;</div><div class="line">              "id": "b831381d-6324-4d53-ad4f-8cda48b30811",  //ID，同理，必须和服务端相同</div><div class="line">              "alterId": 64,               //扩展ID，必须和服务端相同</div><div class="line">              "security": "auto"</div><div class="line">            &#125;</div><div class="line">          ]</div><div class="line">        &#125;</div><div class="line">      ]</div><div class="line">    &#125;,</div><div class="line">    "mux": &#123;</div><div class="line">      "enabled": true</div><div class="line">    &#125;,</div><div class="line">  &#125;,</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>基本上<code>config.json</code>只需要修改<code>address</code>，<code>port</code>，<code>id</code>，<code>alterId</code>四项使其与服务端保持一致就行</p>
+</blockquote>
+<hr>
+<h2 id="浏览器配置"><a href="#浏览器配置" class="headerlink" title="浏览器配置"></a>浏览器配置</h2><hr>
+<p>V2Ray客户端在本地提供了一个socks5代理，所以如果要翻墙的话还需要对浏览器进行设置，以firefox为例<br><img src="/images/settings.jpg" alt="settings"><br>打开firefox的选项，切换至高级选项卡，在网络设置中添加socks v5代理，地址为127.0.0.1，端口1080</p>
+<p><strong>至此，V2Ray的配置基本完成，尝试一下连接<a href="https://www.google.com" target="_blank" rel="external">Google</a>吧！</strong></p>
+<hr>
+<h2 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h2><ul>
+<li><a href="https://www.v2ray.com/" target="_blank" rel="external">V2Ray用户手册</a></li>
+<li><a href="https://toutyrater.github.io/v2ray-guide-pages/" target="_blank" rel="external">V2Ray上手教程</a></li>
+</ul>
 
   	</div>
 	  
+	  <div class="article-tags tags">
+      
+        <a href="/tags/V2Ray/">V2Ray</a>
+      
+	  </div>
+    
 	</section>
 	
 </article>
@@ -189,9 +229,9 @@
         
   <section class='m_widget about'>
 
-<div class='header'>John Doe</div>
+<div class='header'>lunksana</div>
 <div class='content'>
-<div class='desc'>Tempora mutantur, nos et mutamur in illis ...</div>
+<div class='desc'>We pursue freedom ...</div>
 </div>
 </section>
 
@@ -224,10 +264,23 @@
 <div class='header'>Categories</div>
 <div class='content'>
     
+    <ul class="entry">
+    
+        <li><a class="flat-box" href="/categories/gfw/"><div class='name'>gfw</div><div class='badget'>2</div></a></li>
+    
+    </ul>
+    
 </div>
 </section>
 
   
+<div class="m_widget tagcloud">
+    <div class="header">Tags</div>
+    <div class='content'>
+        <a href="/tags/V2Ray/" style="font-size: 14px; color: #808080">V2Ray</a>
+    </div>
+</div>
+
 
 
       </aside>
