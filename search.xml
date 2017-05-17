@@ -13,7 +13,6 @@
 <hr>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><hr>
 <p><strong>注意</strong> 本文主要针对<code>Linux</code>为服务端及<code>Windows</code>为客户端的情况</p>
-<a id="more"></a>
 <h3 id="时间校准"><a href="#时间校准" class="headerlink" title="时间校准"></a>时间校准</h3><p>V2Ray验证方式包含时间，如果时间不正确，将无法连接到服务器，尽量保证服务端和客户端的时间差不要超过一分钟；同时，V2Ray会自动转换时区，故不需要调整时区，只需要保证时间准确；服务器端校准时间方法如下，客户端请自行设置</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ date -R</div><div class="line">Fri, 12 May 2017 03:04:19 -0400 //查看系统时间，-0400代表的时区为西4区，如果转换为东8区时间为 2017-05-12 15:04:19</div><div class="line">date --set=<span class="string">"2017-05-12 03:04:19"</span> //设定时间</div><div class="line">Fri, 12 May 03:04:19 GMT 2017</div></pre></td></tr></table></figure>
 <h3 id="安装curl"><a href="#安装curl" class="headerlink" title="安装curl"></a>安装curl</h3><p><strong>[Redhat\CentOS]</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yum -y install curl</div></pre></td></tr></table></figure></p>
@@ -88,7 +87,7 @@
 <li><strong>更完善的协议：</strong> V2Ray 使用了新的自行研发的VMess协议，改进了Shadowsocks一些已有的缺点，更难被墙检测到</li>
 <li><strong>强大的性能：</strong> 相对于Shadowsocks，V2Ray的网络性能更好，具体数据可以看<a href="https://www.v2ray.com/blog/2017/speed.html" target="_blank" rel="external">官方博客</a></li>
 <li><strong>更丰富的功能：</strong> V2Ray比起Shadowsocks多了许多的功能，以下是部分V2Ray的功能<ul>
-<li>mKCP: V2Ray 的 KCP 协议实现，不必另行安装 kcptun<a id="more"></a></li>
+<li>mKCP: V2Ray 的 KCP 协议实现，不必另行安装 kcptun</li>
 <li>动态端口：动态改变通信的端口，对抗对长时间大流量端口的限速封锁</li>
 <li>路由功能：可以随意设定指定数据包的流向</li>
 <li>传出代理：看名字可能不太好理解，其实差不多可以称之为多重代理。类似于 Tor 的代理</li>
