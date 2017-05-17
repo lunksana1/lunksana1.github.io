@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Write it casually</title>
-  <subtitle>Share something</subtitle>
+  <subtitle>Keep share</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lunksana1.github.io/"/>
-  <updated>2017-05-17T05:49:18.075Z</updated>
+  <updated>2017-05-17T07:39:30.818Z</updated>
   <id>https://lunksana1.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://lunksana1.github.io/2017/05/13/v2ray-how-to-install/"/>
     <id>https://lunksana1.github.io/2017/05/13/v2ray-how-to-install/</id>
     <published>2017-05-13T01:27:49.000Z</published>
-    <updated>2017-05-17T05:49:18.075Z</updated>
+    <updated>2017-05-17T07:39:30.818Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><hr>
 <p>V2Ray的安装非常简单，官方提供了一键安装脚本，有难度的是配置文件的调整及组件的添加</p>
@@ -78,10 +78,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;V2Ray的安装非常简单，官方提供了一键安装脚本，有难度的是配置文件的调整及组件的添加&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;更新历史
+      V2Ray基本配置
     
     </summary>
     
@@ -97,7 +94,7 @@
     <link href="https://lunksana1.github.io/2017/05/12/v2ray/"/>
     <id>https://lunksana1.github.io/2017/05/12/v2ray/</id>
     <published>2017-05-12T04:34:29.000Z</published>
-    <updated>2017-05-17T05:49:32.244Z</updated>
+    <updated>2017-05-17T07:38:30.982Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><hr>
 <p><strong>V2Ray是一款小众的模块化代理软件包，它的目标是提供常用的代理软件模块，简化网络代理软件的开发。</strong></p>
@@ -130,8 +127,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;V2Ray是一款小众的模块化代理软件包，它的目标是提供常用的代理软件模块，简化网络代理软件的开发。&lt;/strong
+      V2Ray简单介绍
     
     </summary>
     
