@@ -3,6 +3,36 @@
   
     
     <entry>
+      <title><![CDATA[v2ray json description]]></title>
+      <url>/2017/05/17/v2ray-json-description/</url>
+      <content type="html"></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[V2Ray进阶之动态端口]]></title>
+      <url>/2017/05/17/v2ray-advanced/</url>
+      <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><hr>
+<p>在前面的文章中已经说明了V2Ray的基本配置过程，但是V2Ray的功能不仅仅只有一个VMess协议，开发之初开发者就已经把它作为一个平台来使用，当有足够多的开发者加入之后，V2Ray将可以为用户提供更多的功能</p>
+]]></content>
+      
+        <categories>
+            
+            <category> gfw </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> V2Ray </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[V2Ray安装配置]]></title>
       <url>/2017/05/13/v2ray-how-to-install/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><hr>
